@@ -1,5 +1,5 @@
 class ConversionsController < ApplicationController
-  before_action :set_conversion, only: %i[ show edit update destroy ]
+  before_action :set_conversion, only: %i[show edit update destroy]
 
   # GET /conversions or /conversions.json
   def index
@@ -7,8 +7,7 @@ class ConversionsController < ApplicationController
   end
 
   # GET /conversions/1 or /conversions/1.json
-  def show
-  end
+  def show; end
 
   # GET /conversions/new
   def new
@@ -16,8 +15,7 @@ class ConversionsController < ApplicationController
   end
 
   # GET /conversions/1/edit
-  def edit
-  end
+  def edit; end
 
   # POST /conversions or /conversions.json
   def create
@@ -25,7 +23,7 @@ class ConversionsController < ApplicationController
 
     respond_to do |format|
       if @conversion.save
-        format.html { redirect_to conversion_url(@conversion), notice: "Conversion was successfully created." }
+        format.html { redirect_to conversion_url(@conversion), notice: 'Conversion was successfully created.' }
         format.json { render :show, status: :created, location: @conversion }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +36,7 @@ class ConversionsController < ApplicationController
   def update
     respond_to do |format|
       if @conversion.update(conversion_params)
-        format.html { redirect_to conversion_url(@conversion), notice: "Conversion was successfully updated." }
+        format.html { redirect_to conversion_url(@conversion), notice: 'Conversion was successfully updated.' }
         format.json { render :show, status: :ok, location: @conversion }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,19 +50,20 @@ class ConversionsController < ApplicationController
     @conversion.destroy
 
     respond_to do |format|
-      format.html { redirect_to conversions_url, notice: "Conversion was successfully destroyed." }
+      format.html { redirect_to conversions_url, notice: 'Conversion was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_conversion
-      @conversion = Conversion.find(params[:id])
-    end
 
-    # Only allow a list of trusted parameters through.
-    def conversion_params
-      params.require(:conversion).permit(:name, :amount)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_conversion
+    @conversion = Conversion.find(params[:id])
+  end
+
+  # Only allow a list of trusted parameters through.
+  def conversion_params
+    params.require(:conversion).permit(:name, :amount)
+  end
 end

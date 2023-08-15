@@ -1,1 +1,1 @@
-json.partial! "conversions/conversion", conversion: @conversion
+json.partial! 'conversions/conversion', conversion: @conversion
