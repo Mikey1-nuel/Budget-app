@@ -1,24 +1,41 @@
-# Budget saver
+# Budget App
 
 ![](./public/splash.png)
 
-This app keps track of all your transctions
+This app keeps track of all your transactions
 
-## Table of Contents
+# 📗 *Table of Contents*
 
-- [Built with](#built-with)
-- [Live app](#live-demo)
-- [Prerequisites](#prerequisites)
-- [Getting Started](#getting-started)
-- [Contributing](#🤝-contributing)
+- [📖 About the Project](#about-project)
+  - [🛠️ Built With](#built-with)
+    - [Key Features](#key-features)
+- [💻 Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Setup](#setup)
+  - [Install](#install)
+- [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
+- [🤝 Contributing](#contributing)
+- [⭐ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
+- [📝 License](#license)
 
-## Built With
+## 📖 Budget App
+Budget App is an expense tracking app that allows users to create new transactions associated with a category and see the money spent on each category.
+
+## 🛠️ Built With
 
 - [Ruby](https://www.ruby-lang.org/)
 - [Rails](https://rubygems.org/gems/rails)
 - [Postgresql](https://www.postgresql.org/)
 
-## Live Demo
+## Key Features
+- Record a transaction
+- Associate a transaction with a category
+- Create new categories
+- View amount spent on each category
+
+## 🚀 Live Demo
 
 - [✨Budget App](https://budget-app-zzqr.onrender.com/)
 
@@ -79,6 +96,12 @@ To run rspec, in your terminal for testing the methods:
 - GitHub: [Githubhandle](https://github.com/Mikey1-nuel)
 - Twitter: [Twitterhandle](https://twitter.com/Mikey_nuel)
 - LinkedIn: [LinkedInhandle](https://www.linkedin.com/in/emmanuel-nwoye-5915141b8/)
+
+## 🔭 Future Features
+- Record income
+- Add more category options
+- View monthly savings
+- Improve styling
 
 ## Credits
 
