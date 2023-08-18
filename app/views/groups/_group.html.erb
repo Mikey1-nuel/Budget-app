@@ -1,12 +1,9 @@
-<div id="<%= dom_id group %>">
-  <p>
-    <strong>Name:</strong>
-    <%= group.name %>
-  </p>
-
-  <p>
-    <strong>Icon:</strong>
-    <%= group.icon %>
-  </p>
-
+<%= link_to group_path(group), class: 'category-card' do %>
+<div id="<%= dom_id group %>" class="category-unit">
+    <div class="category-details">
+      <img src="<%= group.icon %>" alt="<%= group.name %>" class="img"/>
+      <p class="category-name"><%= group.name %></p>
+    </div>
+    <p class="total-price">$<%= group.total_conversions %></p>
 </div>
+<% end %>
