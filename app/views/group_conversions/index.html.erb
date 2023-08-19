@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Group conversions</h1>
+
+<div id="group_conversions">
+  <% @group_conversions.each do |group_conversion| %>
+    <%= render group_conversion %>
+    <p>
+      <%= link_to "Show this group conversion", group_conversion %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New group conversion", new_group_conversion_path %>

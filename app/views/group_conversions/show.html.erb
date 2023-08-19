@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @group_conversion %>
+
+<div>
+  <%= link_to "Edit this group conversion", edit_group_conversion_path(@group_conversion) %> |
+  <%= link_to "Back to group conversions", group_conversions_path %>
+
+  <%= button_to "Destroy this group conversion", @group_conversion, method: :delete %>
+</div>
